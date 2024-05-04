@@ -16,8 +16,8 @@ const Card = () => {
 				<Link href="/">
 					<h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, error.</h1>
 				</Link>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, error, vel dolores unde suscipit possimus sapiente commodi dignissimos tempora, soluta ex magni ipsum modi molestiae.</p>
-				<Link href="/">Read More</Link>
+				<p className={styles.desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, error, vel dolores unde suscipit possimus sapiente commodi dignissimos tempora, soluta ex magni ipsum modi molestiae.</p>
+				<Link href="/" className={styles.link}>Read More</Link>
 			</div>
 		</div>
 	);
