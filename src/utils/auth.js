@@ -3,6 +3,7 @@ import GithubProvider from "next-auth/providers/github";
 import { PrismaAdapter } from "@auth/prisma-adapter";
 import { Prisma } from "@prisma/client";
 import prisma from "./connect";
+import { getServerSession } from "next-auth";
 
 
 export const authOptions = {
@@ -19,3 +20,5 @@ export const authOptions = {
 	],
     secret: process.env.NEXTAUTH_SECRET,
 };
+
+export const getAuthSession = ()=>getServerSession(authOptions)
