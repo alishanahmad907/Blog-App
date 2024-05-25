@@ -1,0 +1,82 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  
+  .wrapper {
+    background-color: var(--softBg);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .inputGroup label {
+    font-weight: bold;
+  }
+  
+  .inputGroup input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .submitButton {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #0070f3;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .submitButton:hover {
+    background-color: #005bb5;
+  }
+  
+  .link {
+    color: #0070f3;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .wrapper {
+      padding: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 640px) {
+    .wrapper {
+      padding: 20px;
+    }
+  
+    .submitButton {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
