@@ -19,16 +19,16 @@ const Navbar = () => {
 					<Image src="/github.png" alt="github" width={24} height={23} />
 				</Link>
 			</div>
-			<Link href="/">
-				<div className={styles.logo}>DevScribe</div>
-			</Link>
+			{/* <Link href="/"> */}
+				<div className={styles.logo}><a href="/">DevScribe</a></div>
+			{/* </Link> */}
 			<div className={styles.links}>
 				<ThemeToggle />
 				<Link href="/" className={styles.link}>
 					Homepage
 				</Link>
 
-				<Link href="/" className={styles.link}>
+				<Link href="/about" className={styles.link}>
 					About
 				</Link>
 				<AuthLinks />
