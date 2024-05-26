@@ -1,0 +1,130 @@
+/* :root {
+    --bg: white;
+    --textColor: black;
+    --softBG: #f0f0f0;
+    --softTextColor: #626262;
+    --primaryColor: #0070f3; 
+}
+  
+   */
+
+  .container {
+    min-height: 100vh;
+    background-color: var(--bg);
+    color: var(--textColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .wrapper {
+    max-width: 600px;
+    width: 100%;
+    background-color: var(--bg);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(221, 215, 215, 0.1);
+    border: 2px solid var(--textColor);
+  }
+  
+  .heading {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .intro {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--softTextColor);
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  .label {
+
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: var(--textColor);
+  }
+  
+  .input,
+  .textarea {
+    margin: 2px 0px 2px 0px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+  }
+  
+  .input:focus,
+  .textarea:focus {
+    outline: none;
+    border-color: var(--primaryColor);
+    box-shadow: 0 0 0 2px rgba(0, 112, 243, 0.2);
+  }
+  
+  .button {
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: rgba(2, 129, 240, 0.779);
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: darken(var(--primaryColor), 5%);
+  }
+  
+  @media screen and (max-width: 640px) {
+    .wrapper {
+      padding: 20px;
+    }
+  
+    .heading {
+      font-size: 1.5rem;
+    }
+  
+    .intro {
+      font-size: 0.9rem;
+    }
+  
+    .label,
+    .input,
+    .textarea {
+      font-size: 0.9rem;
+    }
+  
+    .button {
+      font-size: 0.9rem;
+    }
+  }
+  .successMessage {
+    color: green;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .errorMessage {
+    color: red;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }

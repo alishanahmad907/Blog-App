@@ -79,8 +79,6 @@ model Post {
     userEmail  String
     user       User      @relation(fields: [userEmail], references: [email])
     comments   Comment[]
-    isPopular  Boolean?
-    editorpick Boolean?
 }
 
 model Comment {
@@ -91,4 +89,12 @@ model Comment {
     user      User     @relation(fields: [userEmail], references: [email])
     postSlug  String
     post      Post     @relation(fields: [postSlug], references: [slug])
+}
+
+model Contact {
+  id        String       @id @default(cuid()) @map("_id")
+  name      String
+  email     String
+  message   String
+  createdAt DateTime @default(now())
 }

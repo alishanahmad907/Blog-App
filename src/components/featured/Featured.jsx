@@ -2,7 +2,18 @@ import React from "react";
 import styles from "./featured.module.css";
 import Image from "next/image";
 
-const Featured = () => {
+
+const getData = async () => {
+	const res = await fetch(`http://localhost:3000/api/posts/blarney-castle-tour`, {
+		cache: "no-store",
+	});
+	if (!res.ok) {
+		throw new Error("failed to get post");
+	}
+	return res.json();
+};
+const Featured = async() => {
+    const data = await getData();
 	return (
 		<div className={styles.container}>
 			<h1 className={styles.title}>
@@ -12,11 +23,11 @@ const Featured = () => {
 			</h1>
 			<div className={styles.post}>
 				<div className={styles.imgContainer}>
-					<Image src="/p1.jpeg" alt="posts" fill className={styles.image} />
+					<Image src={data.img} alt="posts" fill className={styles.image} />
 				</div>
 				<div className={styles.textContainer}>
-					<h1 className={styles.postTitle}>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
-					<p className={styles.postDesc}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione atque officia libero velit sit asperiores possimus alias eius facilis soluta repellendus iusto commodi, enim perspiciatis. Facere maiores natus obcaecati perferendis!</p>
+					<h1 className={styles.postTitle}>{data.title}</h1>
+					<p className={styles.postDesc}>{data.desc.substring(3,263)}</p>
 					<button className={styles.button}>Read More</button>
 				</div>
 			</div>
