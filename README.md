@@ -19,3 +19,14 @@ https://github.com/alishanahmad907/DevScribe/assets/91842601/4f9375c0-9c05-421a-
 
 https://github.com/alishanahmad907/DevScribe/assets/91842601/8d4e26d1-5a53-46af-93c5-9da20dcebe54
 
+# Adding Comments to blogs
+
+
+https://github.com/alishanahmad907/DevScribe/assets/91842601/e8749030-1903-49a3-992c-33cd58f0cb86
+
+
+# About Me
+
+
+https://github.com/alishanahmad907/DevScribe/assets/91842601/71c48a10-3f7d-44e1-8505-dc6cb66021a8
+
