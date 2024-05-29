@@ -4,7 +4,7 @@
 https://github.com/alishanahmad907/DevScribe/assets/91842601/db448d8f-1a38-4315-96ef-f3c3773e89d1
 
 
-# Login with Github 
+# Login with OAuth 
 
 
 https://github.com/alishanahmad907/DevScribe/assets/91842601/c642b17e-2466-4480-bfe3-3d924afbf9fd
