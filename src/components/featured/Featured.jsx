@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./featured.module.css";
 import Image from "next/image";
-
+import Link from "next/link";
 
 const getData = async () => {
 	const res = await fetch(`http://localhost:3000/api/posts/blarney-castle-tour`, {
@@ -12,8 +12,8 @@ const getData = async () => {
 	}
 	return res.json();
 };
-const Featured = async() => {
-    const data = await getData();
+const Featured = async () => {
+	const data = await getData();
 	return (
 		<div className={styles.container}>
 			<h1 className={styles.title}>
@@ -27,8 +27,10 @@ const Featured = async() => {
 				</div>
 				<div className={styles.textContainer}>
 					<h1 className={styles.postTitle}>{data.title}</h1>
-					<p className={styles.postDesc}>{data.desc.substring(3,263)}</p>
-					<button className={styles.button}>Read More</button>
+					<p className={styles.postDesc}>{data.desc.substring(3, 263)}</p>
+					<button className={styles.button}>
+						<Link href="http://localhost:3000/posts/blarney-castle-tour">Read More</Link>
+					</button>
 				</div>
 			</div>
 		</div>
